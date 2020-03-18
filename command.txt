@@ -12,6 +12,7 @@ git checkout -- readme.txt                       ·ÅÆú¹¤×÷ÇøµÄĞŞ¸Ä£¬ÃüÁîÖĞµÄ--ºÜÖ
 git reset HEAD readme.txt                        °ÑÔİ´æÇøµÄĞŞ¸Ä³·Ïúµô£¨unstage£©£¬ÖØĞÂ·Å»Ø¹¤×÷Çø£¬Ò²¿ÉÒÔ»ØÍË°æ±¾£¬HEAD±íÊ¾×îĞÂ°æ±¾
 git rm test.txt                                  ´Ó°æ±¾¿âÖĞÉ¾³ıÎÄ¼ş
 git remote add origin git@github.com:michaelliao/learngit.git               ¹ØÁªÔ¶³Ì²Ö¿â£¬origin´ú±íÔ¶³Ì²Ö¿âÃû£¬¿ÉÒÔ¸Ä³É±ğµÄ
+git remote rm origin 				 É¾³ıÔ¶³Ì²Ö¿â
 git push -u origin master                        °Ñ±¾µØ¿âµÄÄÚÈİÍÆËÍµ½Ô¶³Ì£¬-u²ÎÊı±íÊ¾°Ñ±¾µØµÄmaster·ÖÖ§ºÍÔ¶³ÌµÄmaster·ÖÖ§¹ØÁªÆğÀ´
 git clone git@github.com:michaelliao/gitskills.git                   ¿ËÂ¡Ô¶³Ì²Ö¿âµ½±¾µØ
 git pull origin master --allow-unrelated-histories                   °ÑÔ¶³Ì²Ö¿âºÍ±¾µØÍ¬²½£¬Ïû³ı²îÒì
@@ -21,6 +22,7 @@ git checkout master/git switch master            ÇĞ»»·ÖÖ§
 git merge dev                                    ºÏ²¢Ö¸¶¨·ÖÖ§µ½µ±Ç°·ÖÖ§
 git branch -d <name>				 É¾³ı·ÖÖ§
 git log --graph --pretty=oneline --abbrev-commit                     ²é¿´·ÖÖ§ºÏ²¢Çé¿ö
+
 
 
 
