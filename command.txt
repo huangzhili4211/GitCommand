@@ -1,0 +1,26 @@
+创建SSH Key
+打开Shell（Windows下打开Git Bash），创建SSH Key：
+ssh-keygen -t rsa -C "youremail@example.com"
+
+
+git log                                          显示从最近到最远的提交日志
+git log --pretty=oneline
+git reset --hard HEAD^                           回退到上一个版本
+git reset --hard 1094a                           回退到指定版本
+git reflog                                       记录每一次命令
+git checkout -- readme.txt                       放弃工作区的修改，命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+git reset HEAD readme.txt                        把暂存区的修改撤销掉（unstage），重新放回工作区，也可以回退版本，HEAD表示最新版本
+git rm test.txt                                  从版本库中删除文件
+git remote add origin git@github.com:michaelliao/learngit.git               关联远程仓库，origin代表远程仓库名，可以改成别的
+git push -u origin master                        把本地库的内容推送到远程，-u参数表示把本地的master分支和远程的master分支关联起来
+git clone git@github.com:michaelliao/gitskills.git                   克隆远程仓库到本地
+git pull origin master --allow-unrelated-histories                   把远程仓库和本地同步，消除差异
+git checkout -b dev/git switch -c dev            创建并切换分支
+git branch                                       查看当前分支/创建分支
+git checkout master/git switch master            切换分支
+git merge dev                                    合并指定分支到当前分支
+git branch -d <name>				 删除分支
+git log --graph --pretty=oneline --abbrev-commit                     查看分支合并情况
+
+
+
