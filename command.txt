@@ -23,6 +23,9 @@ git merge dev                                    合并指定分支到当前分支
 git branch -d <name>				 删除分支
 git log --graph --pretty=oneline --abbrev-commit                     查看分支合并情况
 
-
+1.git强制覆盖本地文件（与git远程仓库保持一致）：
+git fetch --all
+git reset --hard origin/master
+git pull
 
 
