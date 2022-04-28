@@ -1,32 +1,46 @@
-´´½¨SSH Key
-´ò¿ªShell£¨WindowsÏÂ´ò¿ªGit Bash£©£¬´´½¨SSH Key£º
+åˆ›å»ºSSH Key
+æ‰“å¼€Shellï¼ˆWindowsä¸‹æ‰“å¼€Git Bashï¼‰ï¼Œåˆ›å»ºSSH Keyï¼š
 ssh-keygen -t rsa -C "youremail@example.com"
 
 
-git log                                          ÏÔÊ¾´Ó×î½üµ½×îÔ¶µÄÌá½»ÈÕÖ¾
+git log                                          æ˜¾ç¤ºä»æœ€è¿‘åˆ°æœ€è¿œçš„æäº¤æ—¥å¿—
 git log --pretty=oneline
-git reset --hard HEAD^                           »ØÍËµ½ÉÏÒ»¸ö°æ±¾
-git reset --hard 1094a                           »ØÍËµ½Ö¸¶¨°æ±¾
-git reflog                                       ¼ÇÂ¼Ã¿Ò»´ÎÃüÁî
-git checkout -- readme.txt                       ·ÅÆú¹¤×÷ÇøµÄĞŞ¸Ä£¬ÃüÁîÖĞµÄ--ºÜÖØÒª£¬Ã»ÓĞ--£¬¾Í±ä³ÉÁË¡°ÇĞ»»µ½ÁíÒ»¸ö·ÖÖ§¡±µÄÃüÁî
-git reset HEAD readme.txt                        °ÑÔİ´æÇøµÄĞŞ¸Ä³·Ïúµô£¨unstage£©£¬ÖØĞÂ·Å»Ø¹¤×÷Çø£¬Ò²¿ÉÒÔ»ØÍË°æ±¾£¬HEAD±íÊ¾×îĞÂ°æ±¾
-git rm test.txt                                  ´Ó°æ±¾¿âÖĞÉ¾³ıÎÄ¼ş
-git remote add origin git@github.com:michaelliao/learngit.git               ¹ØÁªÔ¶³Ì²Ö¿â£¬origin´ú±íÔ¶³Ì²Ö¿âÃû£¬¿ÉÒÔ¸Ä³É±ğµÄ
-git remote rm origin 				 É¾³ıÔ¶³Ì²Ö¿â
-git push --force --set-upstream origin master    ±¾µØ²Ö¿âÇ¿ÖÆÌæ»»Ô¶³Ì²Ö¿â
-git push -u origin master                        °Ñ±¾µØ¿âµÄÄÚÈİÍÆËÍµ½Ô¶³Ì£¬-u²ÎÊı±íÊ¾°Ñ±¾µØµÄmaster·ÖÖ§ºÍÔ¶³ÌµÄmaster·ÖÖ§¹ØÁªÆğÀ´
-git clone git@github.com:michaelliao/gitskills.git                   ¿ËÂ¡Ô¶³Ì²Ö¿âµ½±¾µØ
-git pull origin master --allow-unrelated-histories                   °ÑÔ¶³Ì²Ö¿âºÍ±¾µØÍ¬²½£¬Ïû³ı²îÒì
-git checkout -b dev/git switch -c dev            ´´½¨²¢ÇĞ»»·ÖÖ§
-git branch                                       ²é¿´µ±Ç°·ÖÖ§/´´½¨·ÖÖ§
-git checkout master/git switch master            ÇĞ»»·ÖÖ§
-git merge dev                                    ºÏ²¢Ö¸¶¨·ÖÖ§µ½µ±Ç°·ÖÖ§
-git branch -d <name>				 É¾³ı·ÖÖ§
-git log --graph --pretty=oneline --abbrev-commit                     ²é¿´·ÖÖ§ºÏ²¢Çé¿ö
+git reset --hard HEAD^                           å›é€€åˆ°ä¸Šä¸€ä¸ªç‰ˆæœ¬
+git reset --hard 1094a                           å›é€€åˆ°æŒ‡å®šç‰ˆæœ¬
+git reflog                                       è®°å½•æ¯ä¸€æ¬¡å‘½ä»¤
+git checkout -- readme.txt                       æ”¾å¼ƒå·¥ä½œåŒºçš„ä¿®æ”¹ï¼Œå‘½ä»¤ä¸­çš„--å¾ˆé‡è¦ï¼Œæ²¡æœ‰--ï¼Œå°±å˜æˆäº†â€œåˆ‡æ¢åˆ°å¦ä¸€ä¸ªåˆ†æ”¯â€çš„å‘½ä»¤
+git reset HEAD readme.txt                        æŠŠæš‚å­˜åŒºçš„ä¿®æ”¹æ’¤é”€æ‰ï¼ˆunstageï¼‰ï¼Œé‡æ–°æ”¾å›å·¥ä½œåŒºï¼Œä¹Ÿå¯ä»¥å›é€€ç‰ˆæœ¬ï¼ŒHEADè¡¨ç¤ºæœ€æ–°ç‰ˆæœ¬
+git rm test.txt                                  ä»ç‰ˆæœ¬åº“ä¸­åˆ é™¤æ–‡ä»¶
+git remote add origin git@github.com:michaelliao/learngit.git               å…³è”è¿œç¨‹ä»“åº“ï¼Œoriginä»£è¡¨è¿œç¨‹ä»“åº“åï¼Œå¯ä»¥æ”¹æˆåˆ«çš„
+git remote rm origin 				 åˆ é™¤è¿œç¨‹ä»“åº“
+git push --force --set-upstream origin master    æœ¬åœ°ä»“åº“å¼ºåˆ¶æ›¿æ¢è¿œç¨‹ä»“åº“
+git push -u origin master                        æŠŠæœ¬åœ°åº“çš„å†…å®¹æ¨é€åˆ°è¿œç¨‹ï¼Œ-uå‚æ•°è¡¨ç¤ºæŠŠæœ¬åœ°çš„masteråˆ†æ”¯å’Œè¿œç¨‹çš„masteråˆ†æ”¯å…³è”èµ·æ¥
+git clone git@github.com:michaelliao/gitskills.git                   å…‹éš†è¿œç¨‹ä»“åº“åˆ°æœ¬åœ°
+git pull origin master --allow-unrelated-histories                   æŠŠè¿œç¨‹ä»“åº“å’Œæœ¬åœ°åŒæ­¥ï¼Œæ¶ˆé™¤å·®å¼‚
+git checkout -b dev/git switch -c dev            åˆ›å»ºå¹¶åˆ‡æ¢åˆ†æ”¯
+git branch                                       æŸ¥çœ‹å½“å‰åˆ†æ”¯/åˆ›å»ºåˆ†æ”¯
+git checkout master/git switch master            åˆ‡æ¢åˆ†æ”¯
+git merge dev                                    åˆå¹¶æŒ‡å®šåˆ†æ”¯åˆ°å½“å‰åˆ†æ”¯
+git branch -d <name>				 åˆ é™¤åˆ†æ”¯
+git log --graph --pretty=oneline --abbrev-commit                     æŸ¥çœ‹åˆ†æ”¯åˆå¹¶æƒ…å†µ
 
-1.gitÇ¿ÖÆ¸²¸Ç±¾µØÎÄ¼ş£¨ÓëgitÔ¶³Ì²Ö¿â±£³ÖÒ»ÖÂ£©£º
+1.gitå¼ºåˆ¶è¦†ç›–æœ¬åœ°æ–‡ä»¶ï¼ˆä¸gitè¿œç¨‹ä»“åº“ä¿æŒä¸€è‡´ï¼‰ï¼š
 git fetch --all
 git reset --hard origin/master
 git pull
+
+
+git æ— æ³•æ¨é€åˆ°è¿œç¨‹é—®é¢˜è§£å†³
+--------------------------------
+git remote rm origin
+git remote add origin https:*****       ä½¿ç”¨ç½‘å€æ¨é€ï¼Œä¸ä½¿ç”¨sshæ¨é€
+git config --global http.sslVerify "false"        è§£é™¤ssléªŒè¯
+git push -u origin master       
+
+
+
+
+
+
 
 
